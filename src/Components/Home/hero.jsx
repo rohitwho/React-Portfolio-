@@ -1,5 +1,6 @@
 import React from 'react'
 import resume from "./resume.pdf"
+import {Button} from "@nextui-org/react"
 // import img from "src/assets/img.jpg"
 export default function hero() {
     function dowloadPdf(){
@@ -16,8 +17,8 @@ let alink = document.createElement('a');
   return (
     <main className='Hero-Main'>
         <section className='Hero-section'>
-            <h1>Hello,I am Rohit .< br></br>I am Full stack Developer</h1>
-            <button onClick ={dowloadPdf} className="Download">Download CV</button>
+            <h1 className='Hero-Writing'>Hello,My Name is Rohit< br></br><span className='span'>I am a Full stack Developer</span></h1>
+            <Button  onClick ={dowloadPdf} className="Download">Download CV &#8595;</Button>
         
         
           </section>

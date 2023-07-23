@@ -8,7 +8,7 @@ export default function project() {
   return (
 
     <div> <h2 className='Projects-Heading'>Projects</h2> 
-   <div className='Project-Main'>
+   <div id = "Projects" className='Project-Main'>
 
 
   <Card css={{ w: "55%", h: "350px",margin:"1rem" ,display:"flex",flexWrap:"wrap"}}>

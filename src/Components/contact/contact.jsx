@@ -6,7 +6,7 @@ import {Button} from "@nextui-org/react"
 export default function contact() {
   
   return (
-    <div>
+    <div id =  "Contact">
       <h2>Contact Form</h2>
       <FormInput
 						inputLabel="Full Name:"

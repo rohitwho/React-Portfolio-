@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import DarkModeTwoToneIcon from '@mui/icons-material/DarkModeTwoTone';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-
+// import {Button} from "@nextui-org/react"
 import Modal from '@mui/material/Modal';
+import Switch from '@mui/material/Switch';
 
 
 const style = {
@@ -19,6 +20,18 @@ const style = {
   p: 4,
 }
 export default function renderHeader() {
+ 
+const [theme, updateTheme ]= React.useState("")
+
+const body = document.body;
+body.dataset.theme = (theme);
+
+
+function switchMode(){
+  updateTheme("dark")
+
+}
+
 
 
   const [open, setOpen] = React.useState(false);
@@ -31,12 +44,17 @@ const handleClose = () => setOpen(false);
         <h1 className="Header-Logo">Rohit</h1>
 <nav className="Primary-Navbar">
   <ul className="U-List">
-    <li className='Navbar-Links '><a href="" className="Navbar-A">Home</a></li>
-    <li className='Navbar-Links'><a href="" className="Navbar-A">Projects</a></li>
+    <li className='Navbar-Links '><a href="#" className="Navbar-A">Home</a></li>
+    <li className='Navbar-Links'><a href="#Projects" className="Navbar-A">Projects</a></li>
     <li className='Navbar-Links'><a href="" className="Navbar-A">About</a></li>
     <li className='Navbar-Links'><a href="#Contact" className="Navbar-A">Contact</a></li>
     <li className='Navbar-Links'>    <Button  className="Navbar-A" onClick={handleOpen}>Hire Me</Button></li>
-    <DarkModeTwoToneIcon/>
+    <DarkModeTwoToneIcon onClick= {switchMode}/>
+    {/* <Switch
+  checked={theme}
+  onChange={updateTheme}
+  inputProps={{ 'aria-label': 'controlled' }}
+/> */}
 
   </ul>
 </nav>
@@ -77,29 +95,3 @@ const handleClose = () => setOpen(false);
 
 
 
-{/*       
-<div className='Navigation'>
- <BottomNavigation
-      showLabels
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      sx={{ backgroundColor:"Transparent" , color: 'white', padding: '10px',display:"flex",alignItems:"flex-end" }}
-
-    >
-      <BottomNavigationAction label="Projects" icon={<HomeIcon />} />
-      <BottomNavigationAction label="Resume" icon={<ResumeIcon />} />
-      <BottomNavigationAction label="Contact" icon={<ContactIcon />} />
-    </BottomNavigation>
-  
-</div>
-
-
-  <Typography id="modal-modal-title" variant="h6" component="h2">
-      Text in a modal
-    </Typography>
-    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-      Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-    </Typography>
-      */}

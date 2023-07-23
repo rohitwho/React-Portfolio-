@@ -5,7 +5,18 @@
 @tailwind utilities;
 
 
-
+:root {
+    --background: white;
+    --text-primary: black;
+    --text-secondary: royalblue;
+    --accent: purple;
+  }
+  [data-theme='dark'] {
+    --background: black;
+    --text-primary: white;
+    --text-secondary: grey;
+    --accent: darkred;
+  }
 
 
 
@@ -14,6 +25,7 @@ html{
 }
 
 body{
+    background-color: var(--background);
     margin:0;
     padding:0;
     scroll-behavior: smooth;
@@ -40,6 +52,7 @@ body{
     font-size: 2rem;
     font-family: 'Caveat', cursive;
     font-weight: 200;
+    color: var( --text-primary);
 }
 .U-List{
     display: flex;
@@ -52,7 +65,7 @@ body{
 .Navbar-A{
     text-decoration: none;
     font-weight:300;
-    color:black;
+    color:var( --text-primary);
     font-size: 1.3rem;
 }
 .Hire-Form{
@@ -75,6 +88,11 @@ border-bottom: inset;
     justify-content: center;
 align-items: center;
 flex-direction: column;
+}
+.Hero-Writing{
+    font-family: 'Caveat', cursive;
+    color: var(--text-primary);
+    font-size: 1.9rem;
 }
 .hero-img{
     height:500px;
@@ -99,6 +117,7 @@ flex-direction: column;
     width:50%;
     padding: 0.3rem;
     border-bottom: inset;
+    color: var( --text-primary);
 }
 .Form-Input{
     width:50%;
