@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@200;300;400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+.Primary-Header {
+    display:flex;
+    justify-content: space-around;
+    border-bottom:inset;
+}
+.Header-Logo{
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 200;
+}
+.U-List{
+    display: flex;
+    
+}
+.Navbar-Links{
+    margin-inline: 1rem;
+    list-style: none;
+}
+.Navbar-A{
+    text-decoration: none;
+    font-weight:300;
+    color:black;
+    font-size: 1.3rem;
+}
+.Hire-Form{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+
+/*  */
+.Hero-Main{
+    margin: 1rem;
+display: flex;
+justify-content: space-evenly;
+border-bottom: inset;
+}
+.Hero-section{
+    display: flex;
+    justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.hero-img{
+    height:500px;
+    width:100%;
+    object-fit: cover;
+}
+
+
+/*  */
+.Project-Main{
+    display: flex;
+   overflow: hidden;
+}
+/*  */ 
+.Form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.Form-Label{
+    font-size: 1.4rem;
+    width:50%;
+    padding: 0.3rem;
+    border-bottom: inset;
+}
+.Form-Input{
+    width:50%;
+    height:20px;
+}
