@@ -1,7 +1,7 @@
 import React from 'react'
 
    import { Card, Col, Row, Button, Text } from "@nextui-org/react";
-  //  import Rentix from "../assets/Rentix.png"
+
 
 export default function project() {
  

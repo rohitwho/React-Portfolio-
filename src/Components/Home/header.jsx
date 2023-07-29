@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import DarkModeTwoToneIcon from '@mui/icons-material/DarkModeTwoTone';
+
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-// import {Button} from "@nextui-org/react"
 import Modal from '@mui/material/Modal';
-import Switch from '@mui/material/Switch';
+
+
 
 
 const style = {
@@ -19,9 +20,13 @@ const style = {
   boxShadow: 24,
   p: 4,
 }
-export default function renderHeader() {
+export default function renderHeader({ handlePageChange }) {
  
-const [theme, updateTheme ]= React.useState("")
+const [theme, updateTheme ]=useState("")
+
+
+
+
 
 const body = document.body;
 body.dataset.theme = (theme);
@@ -37,6 +42,11 @@ function switchMode(){
   const [open, setOpen] = React.useState(false);
 const handleOpen = () => setOpen(true);
 const handleClose = () => setOpen(false);
+
+
+
+
+
   return (
     <div >
 
@@ -44,17 +54,13 @@ const handleClose = () => setOpen(false);
         <h1 className="Header-Logo">Rohit</h1>
 <nav className="Primary-Navbar">
   <ul className="U-List">
-    <li className='Navbar-Links '><a href="#" className="Navbar-A">Home</a></li>
-    <li className='Navbar-Links'><a href="#Projects" className="Navbar-A">Projects</a></li>
-    <li className='Navbar-Links'><a href="" className="Navbar-A">About</a></li>
-    <li className='Navbar-Links'><a href="#Contact" className="Navbar-A">Contact</a></li>
+    <li className='Navbar-Links '><a href="#" className="Navbar-A"  onClick={() => handlePageChange('Home')}>Home</a></li>
+    <li className='Navbar-Links'><a href="#Projects" className="Navbar-A" >Projects</a></li>
+    <li className='Navbar-Links'><a href="#About" className="Navbar-A" >About</a></li>
+    <li className='Navbar-Links'><a href="#Contact" className="Navbar-A" onClick={() => handlePageChange('Contact')}>Contact</a></li>
     <li className='Navbar-Links'>    <Button  className="Navbar-A" onClick={handleOpen}>Hire Me</Button></li>
     <DarkModeTwoToneIcon onClick= {switchMode}/>
-    {/* <Switch
-  checked={theme}
-  onChange={updateTheme}
-  inputProps={{ 'aria-label': 'controlled' }}
-/> */}
+
 
   </ul>
 </nav>
@@ -67,7 +73,7 @@ const handleClose = () => setOpen(false);
   aria-labelledby="modal-modal-title"
   aria-describedby="modal-modal-description"
 >
-  <Box sx={style}>
+  <Box  sx={style}>
  <form className='Hire-Form' action="">
   <label htmlFor="uName" > Name:</label>
   <input type="text" name="uName" id="uName" />
@@ -80,8 +86,6 @@ const handleClose = () => setOpen(false);
  <button onClick={handleClose}>Cancel</button>
   </Box>
 </Modal>
-
-
 
     </div>
 
