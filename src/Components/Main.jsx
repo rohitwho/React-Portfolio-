@@ -1,9 +1,9 @@
 import React ,{useState}from "react"; 
 import Header from  "./Home/header";
 import Hero from "./Home/hero";
-import Projects from "./projects/project";
+
 import Contact from "./contact/contact";
-import About from "../pages/About-Me";
+
 
 
 

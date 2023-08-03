@@ -8,6 +8,7 @@ import Project from "./Components/projects/project"
 import About from "./pages/About-Me"
 import Socials from "./pages/Socials"
 import Portfolio from "./Components/Main"
+import {NextUIProvider} from "@nextui-org/react";
 
 
 import "./styles.css"
@@ -15,10 +16,16 @@ import "./styles.css"
 function App() {
  
 
-  return (<div><Portfolio/>
-<About/>
+  return (<div>
+    <NextUIProvider>
+
+
+
+<Portfolio/>
+  <About/>
 <Project/>
 <Socials/>
+    </NextUIProvider>
   
   
   

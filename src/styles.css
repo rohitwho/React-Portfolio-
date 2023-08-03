@@ -1,9 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@200;300;400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 :root {
     --background: white;
@@ -17,7 +17,11 @@
     --text-secondary: grey;
     --accent: darkred;
   }
-
+.About-Me{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+}
 
 
 html{
@@ -46,6 +50,8 @@ a{
 /* About  */
 .About-Container{
     color: var(--text-primary);
+  
+    margin-inline: 2%;
 
 }
 
@@ -85,6 +91,11 @@ a{
     flex-direction: column;
     margin: 1%;
     border-radius: 10px;
+}
+.submit-hire{
+    display: inline-flex;
+ padding: 2%;
+ margin-left: 1% !;
 }
 
 
@@ -144,8 +155,14 @@ flex-direction: column;
 }
 .Form-Input{
     width:100%;
-    height:20px;
-    border-radius:4px;
+
+}
+
+.Submit{
+    display: flex;
+    margin:2%;
+    justify-content:center;
+    align-items:center
 }
 .Contact-Right{
     flex-direction: column;
@@ -156,10 +173,32 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:1rem;
+    color: var(--text-primary);
 }
 
 /*  */
 .Skills-Main{
-    display: flex;
+    display: block;
+    flex-direction: column;
+    /* align-items: center; */
+
+    margin: 2%;
     justify-content: center;
+    width:100%;
+
+}
+.skills-tech{
+    margin: 2%;
+}
+.Sills-h1{
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    margin: 1%;
+}
+.ul{
+    width:100%;
+}
+.card{
+    margin:2%;
+    width:50%
 }

@@ -17,8 +17,9 @@ let alink = document.createElement('a');
   return (
     <main className='Hero-Main'>
         <section className='Hero-section'>
-            <h1 className='Hero-Writing'>Hello,My Name is Rohit< br></br><span className='span'>I am a Full stack Developer</span></h1>
-            <Button  onClick ={dowloadPdf} className="Download">Download CV &#8595;</Button>
+            <h1 className='Hero-Writing'>Hello,My Name is Rohit< br>
+            </br><span className='span'>I am a Full stack Developer</span></h1>
+            <Button color='primary' onClick ={dowloadPdf} className="Download">Download CV &#8595;</Button>
         
         
           </section>

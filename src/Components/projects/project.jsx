@@ -1,6 +1,6 @@
 import React from 'react'
 
-   import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
 
 
 export default function project() {
@@ -9,9 +9,90 @@ export default function project() {
 
     <div> <h2 className='Projects-Heading'>Projects</h2> 
    <div id = "Projects" className='Project-Main'>
-
-
-  <Card css={{ w: "55%", h: "350px",margin:"1rem" ,display:"flex",flexWrap:"wrap"}}>
+<section className=' flex justify-center flex-wrap  m-36 '>
+  
+     <div className='card' >
+       <Card  isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5 m-unit-xl">
+  
+          <Image
+            removeWrapper
+            alt="Fit Zone"
+            className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+            src="src/assets/FitZone.png"
+          />
+          <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+            <div>
+              <p className="text-white ">FitZone.</p>
+  
+            </div>
+            <Button className="text-tiny" color="primary" radius="full" size="large" >
+              <a  href = "https://rohitwho.github.io/Fit-Zone/">View Live</a>
+            </Button>
+          </CardFooter>
+        </Card>
+     </div>
+  
+  
+  
+      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
+  
+        <Image
+          removeWrapper
+          alt="Card example background"
+          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+          src="src/assets/Rentix.jpeg"
+        />
+        <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+          <div>
+            <p className="text-white">Rentix</p>
+  
+          </div>
+          <Button className="text-tiny" color="primary" radius="full" size="large">
+           <a href="https://rentixx-64a3fa155998.herokuapp.com/">View Live</a>
+          </Button>
+        </CardFooter>
+      </Card>
+  
+  
+  
+      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
+  
+        <Image
+          removeWrapper
+          alt="Card example background"
+          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+          src="src/assets/FitZone.png"
+        />
+        <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+          <div>
+            <p className="text-white">Book Search.</p>
+  
+          </div>
+          <Button className="text-tiny" color="primary" radius="full" size="large">
+           <a href="">View Live</a>
+          </Button>
+        </CardFooter>
+      </Card>
+      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5   ">
+  
+        <Image
+          removeWrapper
+          alt="Card example background"
+          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+          src="src/assets/Tech Savvy.png"
+        />
+        <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+          <div>
+            <p className="text-white">Tech Savvy</p>
+  
+          </div>
+          <Button className="text-tiny" color="primary" radius="full" size="large">
+           <a href="https://tech-savvy-d98bc01a66cd.herokuapp.com/">View Live</a>
+          </Button>
+        </CardFooter>
+      </Card>
+</section>
+  {/* <Card css={{ w: "55%", h: "350px",margin:"1rem" ,display:"flex",flexWrap:"wrap"}}>
    
     <Card.Body css={{ p: 0 }}>
       <Card.Image
@@ -51,7 +132,7 @@ export default function project() {
                 transform="uppercase"
               
               >
-                View Live!
+                <a href="">View Live</a>!
               </Text>
             </a>
             </Button>
@@ -60,6 +141,7 @@ export default function project() {
       </Row>
     </Card.Footer>
   </Card>
+ */}
 
 
 
@@ -80,8 +162,7 @@ export default function project() {
 
 
 
-
-  <Card css={{ w: "55%", h: "350px",margin:"1rem" ,display:"flex",flexWrap:"wrap"}}>
+  {/* <Card css={{ w: "55%", h: "350px",margin:"1rem" ,display:"flex",flexWrap:"wrap"}}>
     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
    
     </Card.Header>
@@ -246,7 +327,7 @@ export default function project() {
         </Col>
       </Row>
     </Card.Footer>
-  </Card>
+  </Card> */}
 
 
    </div>

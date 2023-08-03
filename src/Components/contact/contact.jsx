@@ -53,9 +53,8 @@ export default function contact() {
 							/>
 							
 
-							{/* <label htmlFor="Message">Message :</label>
-							<textarea id="Message" name="Message" rows="4" cols="50" placeholdertext="Enter Message Here"></textarea> */}
-			<Button >Submit</Button>
+							
+			<Button variant='ghost' color='primary' className='Submit' >Submit</Button>
 	  </section>
 
 		  <section className='Contact-Right'>

@@ -1,50 +1,177 @@
 
 import React from "react";
-import CircularProgressWithLabel from "../Components/progress"
-// import { Modal, Input, Row, Checkbox, Button, Text } from "@nextui-org/react";
-// import FormInput from "../reusable/form";
-// import { Mail } from "./Mail";
-// import { Password } from "./Password";
+import { Progress } from "@nextui-org/react";
+
 
 
 export default function About(){
 
-  // const [visible, setVisible] = React.useState(false);
-  // const handler = () => setVisible(true);
-  // const closeHandler = () => {
-  //   setVisible(false);
- 
-  // };
-    return (<div  id ="About"className="About-Container"> <h1>About Me</h1>
-    <p>
+  
+    return (<div  id ="About"className="About-Container"> <h1 className="About-Me">About Me</h1>
+    <p className="About-Para">
 
 Welcome! I'm<span className="Hero-Writing"> Rohit</span>, a passionate web development wizard. With HTML, CSS, and JavaScript as my spells, I craft captivating and responsive user interfaces. My design artistry ensures stunning visuals and delightful user experiences. Fearless in the face of challenges, I conquer bugs and optimize projects for blazing success. Let's collaborate and weave magic together. Explore my portfolio and unleash the digital wonders!</p>
 
 
 <section className="Skills-Main">
+<h1 className="About-Me">Skills</h1>
   <div className="skills-tech">
-    <ul>
-      <li>HTML<CircularProgressWithLabel value = "30"></CircularProgressWithLabel></li>
-      <li>CSS</li>
-      <li>Javascript</li>
+    <h1 className="Sills-h1">Languages</h1>
+    <ul className="ul">
+      <Progress
+     size="sm"
+     radius="sm"
+     classNames={{
+       base: "max-w-md",
+       track: "drop-shadow-md border border-default",
+       indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+       label: "tracking-wider font-medium text-default-600",
+       value: "text-foreground/60",
+     }}
+     label="Javascript"
+     value={87}
+     showValueLabel={true}
+   />
+    <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="Html"
+      value={95}
+      showValueLabel={true}
+    />
+    <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="Css"
+      value={95}
+      showValueLabel={true}
+    />
   
     </ul>
   </div>
-  <div className="skills-framework">
-    <ul>
-      <li>J-Query</li>
-      <li>Node.js</li>
-      <li>Npm</li>
-      <li>React</li>
+  <div className="skills-tech">
+  <h1 className="Sills-h1" > Framewoks</h1>
+    <ul >
+    <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="React"
+      value={80}
+      showValueLabel={true}
+    />
+       <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="J-Query"
+      value={90}
+      showValueLabel={true}
+    />
+      <li>  <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="BootStrap"
+      value={90}
+      showValueLabel={true}
+    /></li>
+
   
     </ul>
   </div>
-  <div className="skills-db">
+  <div className="skills-tech">
+  <h1 className="Sills-h1">Database/Query Language</h1>
     <ul>
-      <li>My Sql</li>
-      <li>Mongo-Db</li>
-      <li>Mongoose</li>
-      <li>Sequelize</li>
+      <li>  <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="Mongoose"
+      value={80}
+      showValueLabel={true}
+    /></li>
+      <li>  <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="My Sql"
+      value={85}
+      showValueLabel={true}
+    /></li>
+      <li>  <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="Sequelize"
+      value={90}
+      showValueLabel={true}
+    /></li>
+      <li>  <Progress
+      size="sm"
+      radius="sm"
+      classNames={{
+        base: "max-w-md",
+        track: "drop-shadow-md border border-default",
+        indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
+        label: "tracking-wider font-medium text-default-600",
+        value: "text-foreground/60",
+      }}
+      label="GraphQl"
+      value={90}
+      showValueLabel={true}
+    /></li>
+   
     </ul>
   </div>
 </section>
@@ -52,61 +179,6 @@ Welcome! I'm<span className="Hero-Writing"> Rohit</span>, a passionate web devel
 
 
 
-    {/* <div>
-      <Button auto color="Primary" shadow onPress={handler}>
-      Hire Me
-      </Button>
-      <Modal
-        closeButton
-        blur
-        aria-labelledby="modal-title"
-        open={visible}
-        onClose={closeHandler}
-      >
-        <Modal.Header>
-          <Text id="modal-title" size={18}>
-            Welcome to
-            <Text b size={18}>
-              NextUI
-            </Text>
-          </Text>
-        </Modal.Header>
-        <Modal.Body>
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Email"
-            contentLeft={<FormInput fill="currentColor" />}
-          />
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Password"
-            contentLeft={<FormInput fill="currentColor" />}
-          />
-          <Row justify="space-between">
-            <Checkbox>
-              <Text size={14}>Remember me</Text>
-            </Checkbox>
-            <Text size={14}>Forgot password?</Text>
-          </Row>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button auto flat color="error" onPress={closeHandler}>
-            Close
-          </Button>
-          <Button auto onPress={closeHandler}>
-            Sign in
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </div> */}
 
 
 

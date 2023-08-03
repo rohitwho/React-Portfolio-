@@ -7,6 +7,9 @@ import "./styles.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+ 
+ <main className="light text-foreground bg-background">
+        <App />
+      </main>
   </React.StrictMode>,
 )
