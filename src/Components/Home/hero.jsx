@@ -26,7 +26,7 @@ export default function hero() {
         </Button>
       </section>
       <section className="Hero-image">
-        <img className="hero-img" src={"src/assets/hero.gif"} alt="A GUY ON COMPUTER" />
+        <img className="hero-img" src="./React-Portfolio-/src/assets/hero.gif" alt="A GUY ON COMPUTER" />
       </section>
     </main>
   );
