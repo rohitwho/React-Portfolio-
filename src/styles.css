@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 :root {
-    --background: white;
+    --background: #ffffff;
     --text-primary: black;
     --text-secondary: royalblue;
     --accent: purple;
@@ -17,44 +17,49 @@
     --text-secondary: grey;
     --accent: darkred;
   }
-.About-Me{
-    font-size: 1.7rem;
-    display: flex;
-    justify-content: center;
-}
-
-
-html{
-    box-sizing: border-box;
-}
-
-body{
-    background-color: var(--background);
-    margin:0;
-    padding:0;
-    scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
-    
-    /* overflow: hidden; */
-    
-
-}
-a{
-    color: inherit;
-}
-
-
-
-
-
-/* About  */
-.About-Container{
-    color: var(--text-primary);
   
-    margin-inline: 2%;
-
-}
-
+  
+  html{
+      box-sizing: border-box;
+    }
+    
+    body{
+        background-color: var(--background);
+        margin:0;
+        padding:0;
+        scroll-behavior: smooth;
+        font-family: 'Montserrat', sans-serif;
+        
+        /* overflow: hidden; */
+        
+        
+    }
+    
+    a{
+        color: inherit;
+    }
+    
+    
+    
+    
+    
+    /* About  */
+    #About{
+        height: 100vh;
+    }
+    .About-Container{
+        color: var(--text-primary);
+        
+        margin-inline: 2%;
+        
+    }
+    
+    .About-Me{
+        font-size: 1.7rem;
+        color: var(--text-primary);
+        display: flex;
+        justify-content: center;
+    }
 
 
 
@@ -84,7 +89,8 @@ a{
     font-size: 1.3rem;
 }
 .Navbar-A:active{
-    text-decoration: solid;
+   text-decoration: underline;
+
 }
 .Hire-Form{
     display: flex;
@@ -102,8 +108,11 @@ a{
 /*  */
 .Hero-Main{
     margin: 1rem;
+        height: 100vh;
+       
 display: flex;
 justify-content: space-evenly;
+align-items: center;
 border-bottom: inset;
 }
 .Hero-section{
@@ -132,6 +141,7 @@ flex-direction: column;
 /*  */ 
 #Contact{
     border:1px solid Black;
+    height: 100vh;
     display:flex;
     justify-content: space-evenly;
     /* flex-direction: column; */
@@ -178,27 +188,55 @@ flex-direction: column;
 
 /*  */
 .Skills-Main{
-    display: block;
+    display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items:center;
 
-    margin: 2%;
     justify-content: center;
     width:100%;
 
 }
+label{
+    color: var(--text-primary);
+}
+.define{
+    display: flex;
+    width: 80%;
+ 
+    justify-content: center;
+    align-items:center;
+}
+ /* justify-content:space-between; */
+
 .skills-tech{
     margin: 2%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+
+
 }
 .Sills-h1{
     font-family: 'Caveat', cursive;
     font-size: 1.5rem;
     margin: 1%;
+   
 }
+
 .ul{
     width:100%;
 }
 .card{
+ flex-basis: auto;
     margin:2%;
     width:50%
+}
+.Primary-Project{
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-wrap: wrap;
+
 }

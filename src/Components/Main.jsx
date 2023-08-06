@@ -1,41 +1,36 @@
-import React ,{useState}from "react"; 
-import Header from  "./Home/header";
+import React, { useState } from "react";
+import Header from "./Home/header";
 import Hero from "./Home/hero";
+import Project from "./projects/project";
+import About from "../pages/About-Me";
 
 import Contact from "./contact/contact";
 
+export default function Portfolio() {
+  const [currentPage, setCurrentPage] = React.useState("Home");
 
-
-
-
-export default function Portfolio(){
-
-    const [currentPage,setCurrentPage ]= React.useState("Home")
-
-
-
-    const servePage=()=>{
-        if(currentPage === "Home"){
-            return <Hero/>
-        }
-      
-        if(currentPage === "Contact"){
-            return <Contact/>
-        }
-       
+  const servePage = () => {
+    if (currentPage === "Home") {
+      return <Hero />;
     }
-    const handlePageChange = (page) => setCurrentPage(page);
+    if (currentPage === "project") {
+      return <Project />;
+    }
+    if (currentPage === "about") {
+      return <About />;
+    }
 
-return<div>
-<Header handlePageChange={handlePageChange} />
-    
-    
-     {servePage()}</div>
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
+  };
+  const handlePageChange = (page) => setCurrentPage(page);
 
+  return (
+    <div>
+      <Header handlePageChange={handlePageChange} />
 
-
-
+      {servePage()}
+    </div>
+  );
 }
-
-
-
