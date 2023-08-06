@@ -5,8 +5,8 @@ import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 export default function project() {
   return (
     <div>
-      {" "}
-      <h2 className="Projects-Heading">Projects</h2>
+   
+      <h2 className="About-Me">Projects</h2>
       <div id="Projects" className="Project-Main">
         <section className=" Primary-Project">
           <div className="card">
@@ -71,7 +71,7 @@ export default function project() {
                 removeWrapper
                 alt="Card example background"
                 className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                src="src/assets/FitZone.png"
+                src="src/assets/Book-search.jpeg"
               />
               <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
