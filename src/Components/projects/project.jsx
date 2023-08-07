@@ -1,4 +1,9 @@
 import React from "react";
+import fitzone from '../../assets/FitZone.png'
+import rentix from "../../assets/Rentix.jpeg"
+import bookSearch from "../../assets/Book-search/jpeg"
+import techSavvy from "../../assets/TechSavvy.png"
+
 
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 
@@ -18,7 +23,7 @@ export default function project() {
                 removeWrapper
                 alt="Fit Zone"
                 className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                src="src/assets/FitZone.png"
+                src={fitzone}
               />
               <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
@@ -45,7 +50,7 @@ export default function project() {
                 removeWrapper
                 alt="Card example background"
                 className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                src="src/assets/Rentix.jpeg"
+                src={rentix}
               />
               <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
@@ -71,7 +76,7 @@ export default function project() {
                 removeWrapper
                 alt="Card example background"
                 className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                src="src/assets/Book-search.jpeg"
+                src={bookSearch}
               />
               <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
@@ -96,7 +101,7 @@ export default function project() {
                 removeWrapper
                 alt="Card example background"
                 className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                src="src/assets/Tech Savvy.png"
+                src={techSavvy}
               />
               <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>

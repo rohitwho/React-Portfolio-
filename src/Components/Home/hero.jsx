@@ -1,6 +1,7 @@
 import React from "react";
 import resume from "./resume.pdf";
 import { Button } from "@nextui-org/react";
+import heroimg from "../../assets/hero.gif"
 
 export default function hero() {
   function dowloadPdf() {
@@ -26,7 +27,7 @@ export default function hero() {
         </Button>
       </section>
       <section className="Hero-image">
-        <img className="hero-img" src="./React-Portfolio-/src/assets/hero.gif" alt="A GUY ON COMPUTER" />
+        <img className="hero-img" src={heroimg} alt="A GUY ON COMPUTER" />
       </section>
     </main>
   );
