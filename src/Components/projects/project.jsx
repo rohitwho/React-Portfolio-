@@ -1,8 +1,9 @@
 import React from "react";
 import fitzone from '../../assets/FitZone.png'
 import rentix from "../../assets/Rentix.jpeg"
-import bookSearch from "../../assets/Book-search/jpeg"
+import bookSearch from "../../assets/Book-search.jpeg"
 import techSavvy from "../../assets/TechSavvy.png"
+import MusicIO from "../../assets/Music.jpeg"
 
 
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
@@ -29,6 +30,14 @@ export default function project() {
                 <div>
                   <p className="text-white  underline  text-large ">FitZone.</p>
                 </div>
+                        <Button color="primary" variant="ghost">
+                  <a
+                    target="_blank"
+                    href="https://github.com/rohitwho/Fit-Zone"
+                  >
+                  Source Code.
+                  </a>
+                </Button>
                 <Button color="warning" variant="ghost">
                   <a
                     target="_blank"
@@ -56,6 +65,14 @@ export default function project() {
                 <div>
                   <p className="text-white  underline  text-large ">Rentix</p>
                 </div>
+                    <Button color="primary" variant="ghost">
+                  <a
+                    target="_blank"
+                    href="https://github.com/rohitwho/Rentix"
+                  >
+                  Source Code.
+                  </a>
+                </Button>
                 <Button color="warning" variant="ghost">
                   <a
                     target="_blank"
@@ -67,6 +84,10 @@ export default function project() {
               </CardFooter>
             </Card>
           </div>
+
+
+
+
           <div className="card">
             <Card
               isFooterBlurred
@@ -80,10 +101,18 @@ export default function project() {
               />
               <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
-                  <p className="text-white  underline  text-large ">
+                  <p className="text-black  underline  text-large ">
                     Book Search.
                   </p>
                 </div>
+                    <Button color="primary" variant="ghost">
+                  <a
+                    target="_blank"
+                    href="https://github.com/rohitwho/Book-search-engine"
+                  >
+                  Source Code.
+                  </a>
+                </Button>
                 <Button color="warning" variant="ghost">
                   <a target="_blank" href="https://book-search-eng-a5e7ebcdafff.herokuapp.com/">
                     View Live
@@ -92,6 +121,51 @@ export default function project() {
               </CardFooter>
             </Card>
           </div>
+
+
+
+
+          <div className="card">
+            <Card
+              isFooterBlurred
+              className="w-full h-[300px] col-span-12 sm:col-span-5   "
+            >
+              <Image
+                removeWrapper
+                alt="Card example background"
+                className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+                src={MusicIO}
+              />
+              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+                <div>
+                  <p className="text-white  underline  text-large ">
+                Music IO
+                  </p>
+                </div>
+                    <Button color="primary" variant="ghost">
+                  <a
+                    target="_blank"
+                    href="https://github.com/rohitwho/MusicApp"
+                  >
+                  Source Code.
+                  </a>
+                </Button>
+                <Button color="warning" variant="ghost">
+                  <a
+                    target="_blank"
+                    href="https://musicio-d325003c7109.herokuapp.com/"
+                  >
+                    View Live
+                  </a>
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+
+
+
+
+
           <div className="card">
             <Card
               isFooterBlurred
@@ -109,6 +183,14 @@ export default function project() {
                     Tech Savvy
                   </p>
                 </div>
+                    <Button color="warning" variant="ghost">
+                  <a
+                    target="_blank"
+                    href="https://github.com/rohitwho/Tech-savvy"
+                  >
+                  Source Code.
+                  </a>
+                </Button>
                 <Button color="warning" variant="ghost">
                   <a
                     target="_blank"
