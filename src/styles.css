@@ -7,16 +7,17 @@
 
 :root {
     --background: #ffffff;
-    --text-primary: black;
+    --text-primary: rgb(0, 0, 0);
     --text-secondary: royalblue;
     --accent: purple;
   }
-  [data-theme='dark'] {
-    --background: #202020;
+  /* [data-theme='light'] {
+    --background: #d37474;
     --text-primary: white;
     --text-secondary: grey;
     --accent: darkred;
-  }
+        <section className=" Primary-Project">
+  } */
   
   
   html{
@@ -44,14 +45,17 @@
     
     
     /* About  */
-    #About{
+    /* #About{
         height: 100vh;
-    }
+    } */
     .About-Container{
         color: var(--text-primary);
         
         margin-inline: 2%;
         
+    }
+    .About-Para{
+        font-size: 1.2rem;
     }
     
     .About-Me{
@@ -136,7 +140,12 @@ flex-direction: column;
 /*  */
 .Project-Main{
     display: flex;
-   overflow: hidden;
+   /* overflow: hidden; */
+   justify-content: center;
+   /* align-items: center; */
+   margin-inline: 2%;
+
+   /* width:50% */
 }
 /*  */ 
 #Contact{
@@ -187,15 +196,19 @@ flex-direction: column;
 }
 
 /*  */
-.Skills-Main{
+ .Skills-Main{
+    width:50%;
+    align-items: center ;
+ }
+/* .Skills-Main{
     display: flex;
     flex-direction: column;
-    align-items:center;
+align-items: center;
+justify-content: flex-end;
 
-    justify-content: center;
     width:100%;
 
-}
+} */
 label{
     color: var(--text-primary);
 }
