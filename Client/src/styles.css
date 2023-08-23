@@ -140,9 +140,9 @@ flex-direction: column;
 /*  */
 .Project-Main{
     display: flex;
-   /* overflow: hidden; */
+   overflow: hidden;
    justify-content: center;
-   /* align-items: center; */
+   align-items: center;
    margin-inline: 2%;
 
    /* width:50% */
@@ -246,10 +246,62 @@ label{
     margin:2%;
     width:50%
 }
+.hidden-on-desktop {
+    display: none;
+  }
 .Primary-Project{
 display: flex;
 flex-direction: column;
 align-items: center;
 flex-wrap: wrap;
+
+}
+@media only screen and (max-width: 600px) {
+html{
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+.hidden-on-mobile {
+    display: none;
+  }
+  .hidden-on-desktop {
+    display: flex;
+  }
+
+#Contact{
+    flex-direction: column;
+    display:flex;
+    margin-Inline:2%;
+    justify-content: center;
+}
+.Form-Label{
+    font-size: 1rem;
+}
+.hero-img{ 
+    display :none;
+}
+.Hero-Main{
+justify-content: center;
+align-items: center;
+}
+.Hero-Writing{
+
+}
+
+
+
+}
+@media only screen and (min-width: 600px) {
+
+/* .Project-Media{
+    display: inline-flex;
+border-bottom: inset;
+margin: 1%;
+width: 70%;
+height: 350px;
+
+} */
+
+
 
 }

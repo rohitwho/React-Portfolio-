@@ -93,17 +93,13 @@ export default function contact() {
     });
   }
 
-  function closeModal() {
-    setIsOpen(false);
-
-  }
 
   return (
     <div id="Contact">
       <Modal
         isOpen={modalIsOpen}
         style={customStyles}
-        // onRequestClose={closeModal}
+
       >
         <Lottie animationData={sentAnimation}></Lottie>
 

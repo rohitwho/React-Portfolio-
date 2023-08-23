@@ -13,10 +13,10 @@ export default function Portfolio() {
     if (currentPage === "Home") {
       return <Hero />;
     }
-    if (currentPage === "project") {
+    if (currentPage === "Projects") {
       return <Project />;
     }
-    if (currentPage === "about") {
+    if (currentPage === "About") {
       return <About />;
     }
 
