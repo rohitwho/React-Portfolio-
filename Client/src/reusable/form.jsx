@@ -10,6 +10,9 @@ const FormInput = ({
 	ariaLabelName,
 	cols,
 	rows,
+	value,
+	onChange
+
   }) => {
 
 	if (inputType === 'textarea') {
@@ -20,12 +23,16 @@ const FormInput = ({
 		  </label>
 		  <textarea
 			className="Form-Input"
+			type={inputType}
+		
 			id={inputId}
 			name={inputName}
 			placeholder={placeholdertext}
 			aria-label={ariaLabelName}
 			cols={cols}
 			rows={rows}
+			value={value} // Bind the value to the input
+          onChange={onChange}
 			required
 		  />
 		</div>
@@ -45,6 +52,8 @@ const FormInput = ({
 		  name={inputName}
 		  placeholder={placeholdertext}
 		  aria-label={ariaLabelName}
+		  value={value} 
+          onChange={onChange}
 		  required
 		/>
 	  </div>
