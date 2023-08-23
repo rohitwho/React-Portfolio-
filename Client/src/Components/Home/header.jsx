@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 
 import {
   Navbar,
@@ -13,14 +13,15 @@ import {
 } from "@nextui-org/react";
 import { SunIcon } from "./icons/SunIcon";
 import { MoonIcon } from "./icons/MoonIcon";
+import SetTheme  from "../Context/Theme"
 
 export default function renderHeader({ handlePageChange }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [dayNight, setDayNight] = useState(false);
+  const {dayNight, setDayNight} = useContext(SetTheme);
 
   function nightModeHandler() {
     setDayNight(true);
-    console.log("hello");
+
   }
 
   const menuItems = ["Home", "Projects", "About", "Contact"];
