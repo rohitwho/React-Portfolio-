@@ -38,6 +38,14 @@ app.post("/SendMessage", async (req, res) => {
   }
 });
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../Client/dist")));
+}
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Client/dist/index.html"));
+});
+
+
 app.listen(PORT, () => {
   console.log(`App is running localhost: ${PORT}`);
 });

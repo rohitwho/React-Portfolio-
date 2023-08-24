@@ -60,7 +60,7 @@ export default function contact() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/SendMessage",
+        "https://react-port-562ab13c7b31.herokuapp.com//SendMessage",
         input
       );
 
