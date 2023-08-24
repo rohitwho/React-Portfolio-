@@ -20,13 +20,14 @@ export default function renderHeader({ handlePageChange }) {
   const {dayNight, setDayNight} = useContext(SetTheme);
 
   function nightModeHandler() {
-    setDayNight(true);
+   setDayNight(!dayNight)
+
 
   }
 
   const menuItems = ["Home", "Projects", "About", "Contact"];
   return (
-    <div>
+    <div style={{borderBottom:"inset"}}>
       <Navbar onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle
@@ -34,7 +35,7 @@ export default function renderHeader({ handlePageChange }) {
             className="  hidden-on-desktop sm:flex"
           />
           <NavbarBrand>
-            <p className="Header-Logo ">Rohit</p>
+            <p className="Header-Logo "        onClick={() => handlePageChange("Home")} >Rohit</p>
           </NavbarBrand>
         </NavbarContent>
 

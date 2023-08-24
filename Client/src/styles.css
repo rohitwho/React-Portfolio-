@@ -1,205 +1,187 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@200;300;400&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
     --background: #ffffff;
     --text-primary: rgb(0, 0, 0);
     --text-secondary: royalblue;
     --accent: purple;
-  }
-  /* [data-theme='light'] {
-    --background: #d37474;
-    --text-primary: white;
-    --text-secondary: grey;
-    --accent: darkred;
-        <section className=" Primary-Project">
   } */
-  
-  
-  html{
-      box-sizing: border-box;
-    }
-    
-    body{
-        background-color: var(--background);
-        margin:0;
-        padding:0;
-        scroll-behavior: smooth;
-        font-family: 'Montserrat', sans-serif;
-        
-        /* overflow: hidden; */
-        
-        
-    }
-    
-    a{
-        color: inherit;
-    }
-    
-    
-    
-    
-    
-    /* About  */
-    /* #About{
-        height: 100vh;
-    } */
-    .About-Container{
-        color: var(--text-primary);
-        
-        margin-inline: 2%;
-        
-    }
-    .About-Para{
-        font-size: 1.2rem;
-    }
-    
-    .About-Me{
-        font-size: 1.7rem;
-        color: var(--text-primary);
-        display: flex;
-        justify-content: center;
-    }
+.wrappr[data-theme="dark"] {
+  --text-primary: white;
+  --text-secondary: grey;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-family: "Montserrat", sans-serif;
+
+  /* overflow: hidden; */
+}
+
+a {
+  color: inherit;
+}
 
 
+.About-Container {
+  color: var(--text-primary);
+
+  margin-inline: 2%;
+}
+.About-Para {
+  font-size: 1.2rem;
+}
+
+.About-Me {
+  font-size: 1.7rem;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+}
 
 .Primary-Header {
-    display:flex;
-    justify-content: space-around;
-    border-bottom:inset;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: inset;
 }
-.Header-Logo{
-    font-size: 2rem;
-    font-family: 'Caveat', cursive;
-    font-weight: 200;
-    color: var( --text-primary);
+.Header-Logo {
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  cursor: pointer;
+  color: var(--text-primary);
 }
-.U-List{
-    display: flex;
-    
+.U-List {
+  display: flex;
 }
-.Navbar-Links{
-    margin-inline: 1rem;
-    list-style: none;
+.Navbar-Links {
+  margin-inline: 1rem;
+  list-style: none;
 }
-.Navbar-A{
-    text-decoration: none;
-    font-weight:300;
-    color:var( --text-primary);
-    font-size: 1.3rem;
+.Navbar-A {
+  text-decoration: none;
+  font-weight: 300;
+  color: var(--text-primary);
+  font-size: 1.3rem;
 }
-.Navbar-A:active{
-   text-decoration: underline;
-
+.Navbar-A:active {
+  text-decoration: underline;
 }
-.Hire-Form{
-    display: flex;
-    flex-direction: column;
-    margin: 1%;
-    border-radius: 10px;
+.Hire-Form {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  border-radius: 10px;
 }
-.submit-hire{
-    display: inline-flex;
- padding: 2%;
- margin-left: 1% !;
-}
-
-
-/*  */
-.Hero-Main{
-    margin: 1rem;
-        height: 100vh;
-       
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-border-bottom: inset;
-}
-.Hero-section{
-    display: flex;
-    justify-content: center;
-align-items: center;
-flex-direction: column;
-}
-.Hero-Writing{
-    font-family: 'Caveat', cursive;
-    color: var(--text-primary);
-    font-size: 1.9rem;
-}
-.hero-img{
-    height:500px;
-    width:100%;
-    object-fit: cover;
-}
-
-
-/*  */
-.Project-Main{
-    display: flex;
-   overflow: hidden;
-   justify-content: center;
-   align-items: center;
-   margin-inline: 2%;
-
-   /* width:50% */
-}
-/*  */ 
-#Contact{
-    border:1px solid Black;
-    height: 100vh;
-    display:flex;
-    justify-content: space-evenly;
-    /* flex-direction: column; */
-    align-items: center;
-}
-.Contact-Details{
-   color: var(--text-primary);
-
-}
-.Form{
-    display: flex;
-    flex-direction: column;
-    margin: 0.1rem;
-}
-.Form-Label{
-    font-size: 1.4rem;
-    width:100%;
-    padding: 0.1rem;
-    border-bottom: inset;
-    color: var( --text-primary);
-}
-.Form-Input{
-    width:100%;
-
-}
-
-.Submit{
-    display: flex;
-    margin:2%;
-    justify-content:center;
-    align-items:center
-}
-.Contact-Right{
-    flex-direction: column;
-}
-/*  */
-.Socials{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
-    color: var(--text-primary);
+.submit-hire {
+  display: inline-flex;
+  padding: 2%;
+  margin-left: 1% !;
 }
 
 /*  */
- .Skills-Main{
-    width:50%;
-    align-items: center ;
- }
+.Hero-Main {
+  margin: 1rem;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: inset;
+}
+.Hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Hero-Writing {
+  font-family: "Caveat", cursive;
+  color: var(--text-primary);
+  font-size: 1.9rem;
+}
+.hero-img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*  */
+.Project-Main {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 2%;
+
+  /* width:50% */
+}
+/*  */
+#Contact {
+  border: 1px solid Black;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  align-items: center;
+}
+.Contact-Details {
+  color: var(--text-primary);
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  margin: 0.1rem;
+}
+.Form-Label {
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 0.1rem;
+  border-bottom: inset;
+  color: var(--text-primary);
+}
+.Form-Input {
+  width: 100%;
+}
+
+.Submit {
+  display: flex;
+  margin: 2%;
+  justify-content: center;
+  align-items: center;
+}
+.Contact-Right {
+  flex-direction: column;
+}
+/*  */
+.Socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-primary);
+}
+
+/*  */
+.Skills-Main {
+  width: 50%;
+  align-items: center;
+}
 /* .Skills-Main{
     display: flex;
     flex-direction: column;
@@ -209,99 +191,75 @@ justify-content: flex-end;
     width:100%;
 
 } */
-label{
-    color: var(--text-primary);
+label {
+  color: var(--text-primary);
 }
-.define{
-    display: flex;
-    width: 80%;
- 
-    justify-content: center;
-    align-items:center;
+.define {
+  display: flex;
+  width: 80%;
+
+  justify-content: center;
+  align-items: center;
 }
- /* justify-content:space-between; */
+/* justify-content:space-between; */
 
-.skills-tech{
-    margin: 2%;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    /* justify-content: center; */
-    width: 100%;
-
-
+.skills-tech {
+  margin: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
 }
-.Sills-h1{
-    font-family: 'Caveat', cursive;
-    font-size: 1.5rem;
-    margin: 1%;
-   
+.Sills-h1 {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  margin: 1%;
 }
 
-.ul{
-    width:100%;
+.ul {
+  width: 100%;
 }
-.card{
- flex-basis: auto;
-    margin:2%;
-    width:50%
+.card {
+  flex-basis: auto;
+  margin: 2%;
+  width: 50%;
 }
 .hidden-on-desktop {
-    display: none;
-  }
-.Primary-Project{
-display: flex;
-flex-direction: column;
-align-items: center;
-flex-wrap: wrap;
-
+  display: none;
+}
+.Primary-Project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 600px) {
-html{
+  html {
     font-size: 1rem;
     overflow-x: hidden;
-}
-.hidden-on-mobile {
+  }
+  .hidden-on-mobile {
     display: none;
   }
   .hidden-on-desktop {
     display: flex;
   }
 
-#Contact{
+  #Contact {
     flex-direction: column;
-    display:flex;
-    margin-Inline:2%;
+    display: flex;
+    margin-inline: 2%;
     justify-content: center;
-}
-.Form-Label{
+  }
+  .Form-Label {
     font-size: 1rem;
-}
-.hero-img{ 
-    display :none;
-}
-.Hero-Main{
-justify-content: center;
-align-items: center;
-}
-.Hero-Writing{
-
-}
-
-
-
-}
-@media only screen and (min-width: 600px) {
-
-/* .Project-Media{
-    display: inline-flex;
-border-bottom: inset;
-margin: 1%;
-width: 70%;
-height: 350px;
-
-} */
-
-
-
+  }
+  .hero-img {
+    display: none;
+  }
+  .Hero-Main {
+    justify-content: center;
+    align-items: center;
+  }
 }

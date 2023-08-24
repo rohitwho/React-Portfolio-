@@ -1,6 +1,6 @@
 import React from "react";
 import { Progress } from "@nextui-org/react";
-import Animation from "./About-Animation/Ani.json"
+import Animation from "./About-Animation/Ani.json";
 import Lottie from "lottie-react";
 
 export default function About() {
@@ -17,28 +17,25 @@ export default function About() {
         success. Let's collaborate and weave magic together. Explore my
         portfolio and unleash the digital wonders!
       </p>
-   
-      <div style={{
-            display:"flex",
-            // border:" 2px solid black",
-            width:"100%",
-            justifyContent:"space-around",
-margin:"1%",
+      <div
+        style={{
+          display: "flex",
+  
+          width: "100%",
+          justifyContent: "space-around",
+          margin: "1%",
 
-            alignItems:"center"
-
-          }}>
-      <div style={{
-        width:"40%",
-        
-      }}>
-          <Lottie animationData={Animation}/>
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            width: "40%",
+          }}
+        >
+          <Lottie animationData={Animation} />
         </div>
         <section className="Skills-Main">
-     
-        
-      
-        
           <h1 className="About-Me">Skills</h1>
           <div className="define">
             <h1 className="Sills-h1">Languages</h1>
