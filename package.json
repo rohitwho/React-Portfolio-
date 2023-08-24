@@ -18,5 +18,8 @@
   "devDependencies": {
     "concurrently": "^8.2.1",
     "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.0.4"
   }
 }
