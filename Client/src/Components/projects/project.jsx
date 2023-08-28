@@ -3,7 +3,7 @@ import fitzone from "../../assets/FitZone.png";
 import rentix from "../../assets/Rentix.jpeg";
 import bookSearch from "../../assets/Book-search.jpeg";
 import techSavvy from "../../assets/TechSavvy.png";
-import MusicIO from "../../assets/Music.jpeg";
+import MusicIO from "../../assets/MusicIO.jpeg";
 import {
   DiCss3Full,
   DiHtml5,
@@ -27,7 +27,7 @@ export default function project() {
       img: MusicIO,
       liveUrl: "https://musicio-d325003c7109.herokuapp.com/",
       description:
-        "Music IO is a platform where people can Listen to the Latest Music and share their opinions about their favourite artists and make new friends with common music interests and Chat with them. ",
+        "Music IO Beta is a  React web platform where people can Listen to the Latest Music and share their opinions about their favourite artists through the Chatbox Feature Powered by Socket IO and make new friends with common music interests and Chat with them. ",
       technologiesUsed: [
         <DiReact />,
         <DiNodejs />,
