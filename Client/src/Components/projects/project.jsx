@@ -25,7 +25,7 @@ export default function project() {
       projectName: "Music IO",
       gitHubUrl: "https://github.com/rohitwho/Rentix",
       img: MusicIO,
-      liveUrl: "https://musicio-d325003c7109.herokuapp.com/",
+      liveUrl: "https://musicio0-b0f9cf42ed89.herokuapp.com/",
       description:
         "Music IO Beta is a  React web platform where people can Listen to the Latest Music and share their opinions about their favourite artists through the Chatbox Feature Powered by Socket IO and make new friends with common music interests and Chat with them. ",
       technologiesUsed: [
@@ -114,14 +114,14 @@ export default function project() {
       <div id="Projects" className="Project-Main">
         <section className=" Primary-Project">
           {projects?.map((content) => (
-            <div className="Project-Media"
+            <div
+              className="Project-Media"
               style={{
                 display: "block",
                 borderBottom: "inset",
 
                 margin: "2%",
                 width: "70%",
-               
               }}
               key={content.key}
             >
@@ -150,7 +150,7 @@ export default function project() {
                   justifyContent: "center",
                   flexDirection: "column",
                   alignItems: "center",
-padding:"1%",
+                  padding: "1%",
 
                   width: "100%",
                 }}
@@ -190,7 +190,7 @@ padding:"1%",
                   style={{
                     margin: "2%",
                     display: "flex",
-padding:"5%",
+                    padding: "5%",
                     gap: "10px",
                   }}
                 >
@@ -207,9 +207,6 @@ padding:"5%",
                   </Button>
                 </div>
               </div>
-
-
-              
             </div>
           ))}
         </section>
@@ -217,4 +214,3 @@ padding:"5%",
     </div>
   );
 }
-
