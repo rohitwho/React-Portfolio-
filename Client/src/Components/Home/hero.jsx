@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "./Rohit Portfolio.pdf";
+import resume from "./RohitNayyarResume.pdf";
 import { Button } from "@nextui-org/react";
 import heroimg from "../../assets/hero.gif"
 
