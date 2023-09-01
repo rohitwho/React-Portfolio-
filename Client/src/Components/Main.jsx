@@ -7,7 +7,7 @@ import About from "../pages/About-Me";
 import Contact from "./contact/contact";
 
 export default function Portfolio() {
-  const [currentPage, setCurrentPage] = React.useState("Home");
+  const [currentPage, setCurrentPage] = useState("Home");
 
   const servePage = () => {
     if (currentPage === "Home") {
@@ -30,7 +30,7 @@ export default function Portfolio() {
     <div>
       <Header handlePageChange={handlePageChange} />
 
-      {servePage()}
+      {servePage() }
     </div>
   );
 }

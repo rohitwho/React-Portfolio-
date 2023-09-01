@@ -19,18 +19,16 @@ export default function renderHeader({ handlePageChange }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const {dayNight, setDayNight} = useContext(SetTheme);
 
-  function nightModeHandler() {
-   setDayNight(!dayNight)
+  const  nightModeHandler = () =>   setDayNight(!dayNight)
 
-
-  }
 
   const menuItems = ["Home", "Projects", "About", "Contact"];
   return (
     <div style={{borderBottom:"inset"}}>
       <Navbar onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
-          <NavbarMenuToggle
+          <NavbarMenuToggle 
+          
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             className="  hidden-on-desktop sm:flex"
           />
@@ -100,7 +98,7 @@ export default function renderHeader({ handlePageChange }) {
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                onClick={() => handlePageChange(item)}
+                onClick={()=> handlePageChange(item)}
                 color={
                   index === 2
                     ? "primary"

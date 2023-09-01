@@ -59,7 +59,7 @@ export default function project() {
       projectName: "Rentix",
       gitHubUrl: "https://github.com/rohitwho/Rentix",
       img: rentix,
-      liveUrl: "https://rentixx-64a3fa155998.herokuapp.com/",
+      liveUrl: "https://rentix-429c622e6d31.herokuapp.com/",
       description:
         "At Rentix Customers can search and view available venues for their events. The API provides endpoints to retrieve details about each venue, including its capacity, amenities, and pricing.  ",
       technologiesUsed: [
