@@ -26,7 +26,7 @@
 
 
 ## Description
-Welcome to my personal portfolio built with React! Explore my projects, skills, and experience in this interactive web application. Showcase my work and talents with a clean and customizable design. 🌐 #React #Portfolio #WebDevelopment"
+Welcome to my personal portfolio built with React! Explore my projects, skills, and experience in this interactive web application.  That showcase my work and talents with a clean and customizable design. 🌐 #React #Portfolio #WebDevelopment"
 
 ## Installation
 To set up the project on your local machine, follow these steps:
