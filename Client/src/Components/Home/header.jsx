@@ -24,7 +24,7 @@ export default function renderHeader({ handlePageChange }) {
 
   const menuItems = ["Home", "Projects", "About", "Contact"];
   return (
-    <div style={{borderBottom:"inset"}}>
+    <div style={{borderBottom:"inset", backgroundColor:"rgb(1 37 65)"}}>
       <Navbar onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle 
