@@ -1,7 +1,7 @@
 # React-Portfolio-
 
 
- ![](https://img.shields.io/badge/license-MIT-brightgreen) ![](https://img.shields.io/badge/node.js-graphql-red) 
+ ![](https://img.shields.io/badge/license-MIT-brightgreen) 
 
 
 
@@ -21,11 +21,8 @@
 
 ## Preview
 
-![Uploading 93AD9CA4-FC1E-4065-9AFF-8A98C3E6735E_1_201_a.jpeg…]()
+![93AD9CA4-FC1E-4065-9AFF-8A98C3E6735E_1_201_a](https://github.com/rohitwho/React-Portfolio-/assets/123782523/052ccc2f-9aba-4c27-935f-2edf867fadde)
 
-
-
-  
 
 
 ## Description
