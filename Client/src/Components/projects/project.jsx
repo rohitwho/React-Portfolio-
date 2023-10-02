@@ -4,6 +4,7 @@ import rentix from "../../assets/Rentix.jpeg";
 import bookSearch from "../../assets/Book-search.jpeg";
 import techSavvy from "../../assets/TechSavvy.png";
 import MusicIO from "../../assets/MusicIO.jpeg";
+import ShopAll from '../../assets/ShopAll.jpg'
 import {
   DiCss3Full,
   DiHtml5,
@@ -20,6 +21,25 @@ import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 
 export default function project() {
   const projects = [
+    {
+      key: "0",
+      projectName: "Shop-All",
+      gitHubUrl: "https://github.com/rohitwho/e-com",
+      img: ShopAll,
+      liveUrl: "https://musicio0-b0f9cf42ed89.herokuapp.com/",
+      description:
+        "Welcome to Shop-All, your one-stop destination for all your online shopping needs. Discover a world of endless possibilities as you explore our wide range of products, from fashion and electronics to home decor and more. With easy navigation, secure payments, and lightning-fast delivery, we make your online shopping experience seamless and enjoyable. Shop with confidence and style at Shop-All today! ",
+      technologiesUsed: [
+        <DiReact />,
+        <DiNodejs />,
+        <DiHtml5 />,
+        <DiCss3Full />,
+        <DiJsBadge />,
+        <DiDatabase />,
+        <DiHeroku />,
+        <DiBootstrap />,
+      ],
+    },
     {
       key: "1",
       projectName: "Music IO",
