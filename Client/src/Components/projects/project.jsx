@@ -26,7 +26,7 @@ export default function project() {
       projectName: "Shop-All",
       gitHubUrl: "https://github.com/rohitwho/e-com",
       img: ShopAll,
-      liveUrl: "https://musicio0-b0f9cf42ed89.herokuapp.com/",
+      liveUrl: "https://shopall-7d84df423472.herokuapp.com/",
       description:
         "Welcome to Shop-All, your one-stop destination for all your online shopping needs. Discover a world of endless possibilities as you explore our wide range of products, from fashion and electronics to home decor and more. With easy navigation, secure payments, and lightning-fast delivery, we make your online shopping experience seamless and enjoyable. Shop with confidence and style at Shop-All today! ",
       technologiesUsed: [
