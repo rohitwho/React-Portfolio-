@@ -129,7 +129,7 @@ export default function project() {
   ];
 
   return (
-    <div className="Project-Wrapper">
+    <div  id ="Project" className="Project-Wrapper">
       <h2 className="About-Me">Projects</h2>
       <div id="Projects" className="Project-Main">
         <section className=" Primary-Project">

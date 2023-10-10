@@ -3,6 +3,7 @@ import Portfolio from "./Components/Main";
 import { NextUIProvider } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import SetTheme from "./Components/Context/Theme";
+import Project from './Components/projects/project'
 
 import "./styles.css";
 
@@ -22,6 +23,7 @@ function App() {
       >
         <NextUIProvider>
           <Portfolio />
+          <Project/>
 
           <Socials />
         </NextUIProvider>

@@ -15,8 +15,10 @@ import { SunIcon } from "./icons/SunIcon";
 import { MoonIcon } from "./icons/MoonIcon";
 import SetTheme  from "../Context/Theme"
 
+
 export default function renderHeader({ handlePageChange }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log(isMenuOpen);
   const {dayNight, setDayNight} = useContext(SetTheme);
 
   const  nightModeHandler = () =>   setDayNight(!dayNight)
@@ -25,7 +27,7 @@ export default function renderHeader({ handlePageChange }) {
   const menuItems = ["Home", "Projects", "About", "Contact"];
   return (
     <div style={{borderBottom:"inset", backgroundColor:"rgb(1 37 65)"}}>
-      <Navbar onMenuOpenChange={setIsMenuOpen}>
+      <Navbar   isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle 
           
@@ -33,7 +35,7 @@ export default function renderHeader({ handlePageChange }) {
             className="  hidden-on-desktop sm:flex"
           />
           <NavbarBrand>
-            <p className="Header-Logo "        onClick={() => handlePageChange("Home")} >Rohit</p>
+            <p className="Header-Logo " onClick={() => handlePageChange("Home")} >Rohit</p>
           </NavbarBrand>
         </NavbarContent>
 
@@ -98,7 +100,7 @@ export default function renderHeader({ handlePageChange }) {
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                onClick={()=> handlePageChange(item)}
+                onClick={()=> {handlePageChange(item) ,setIsMenuOpen(false)}}
                 color={
                   index === 2
                     ? "primary"
