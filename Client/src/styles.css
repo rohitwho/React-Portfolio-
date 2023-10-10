@@ -256,10 +256,11 @@ label {
     font-size: 1rem;
   }
   .hero-img {
-    display: none;
+    display: block;
   }
   .Hero-Main {
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 }
