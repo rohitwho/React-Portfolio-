@@ -3,6 +3,8 @@ import resume from "./RohitNayyarResume.pdf";
 import { Button, Link } from "@nextui-org/react";
 import heroimg from "../../assets/hero.gif"
 import Socials from "../../pages/Socials";
+import Hero from "../../pages/About-Animation/hero.json";
+import Lottie from "lottie-react";
 
 export default function hero() {
   function dowloadPdf() {
@@ -35,7 +37,8 @@ export default function hero() {
         <div className=" pt-5"><Socials/></div>
       </section>
       <section className="Hero-image">
-        <img className="hero-img" src={heroimg} alt="A GUY ON COMPUTER" />
+        <Lottie animationData={Hero}></Lottie>
+        {/* <img className="hero-img" src={Hero} alt="A GUY ON COMPUTER" /> */}
       </section>
     </main>
   );

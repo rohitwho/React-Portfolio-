@@ -4,8 +4,11 @@ import { NextUIProvider } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import SetTheme from "./Components/Context/Theme";
 import Project from './Components/projects/project'
+import Section from "./Components/About/About";
 
 import "./styles.css";
+// import About from "./pages/About-Me";
+import Skills from "./Components/Skills/Skills";
 
 function App() {
   const [dayNight, setDayNight] = useState();
@@ -23,7 +26,11 @@ function App() {
       >
         <NextUIProvider>
           <Portfolio />
+          <Section/>
+
           <Project/>
+          <Skills/>
+
 
           <Socials />
         </NextUIProvider>

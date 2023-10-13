@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./Home/header";
 import Hero from "./Home/hero";
 import Project from "./projects/project";
-import About from "../pages/About-Me";
+
 
 import Contact from "./contact/contact";
 
@@ -17,7 +17,7 @@ export default function Portfolio() {
       return <Project />;
     }
     if (currentPage === "About") {
-      return <About />;
+      return ;
     }
 
     if (currentPage === "Contact") {
