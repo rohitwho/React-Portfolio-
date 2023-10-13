@@ -1,34 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@200;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-    --background: #ffffff;
-    --text-primary: rgb(0, 0, 0);
-    --text-secondary: royalblue;
-    --accent: purple;
-  } */
+:root {
+--font-family-Fjalla :  'Fjalla One', sans-serif;
+--font-family-playFair : 'Playfair Display', serif;
+--font-family-youngSerif : 'Young Serif', serif;
+
+  }
 .wrappr[data-theme="dark"] {
   --text-primary: white;
   --text-secondary: grey;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+.wrappr[data-theme="light"] {
+ /* background-color: #ecebea; */
+}
 
 html {
   box-sizing: border-box;
+
 }
 
 body {
-  background-color: var(--background);
+  /* background-color: var(--background); */
+  /* background-color: #e1dfdd; */
+
+
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  /* font-family: 'Fjalla One', sans-serif; */
   font-family: "Montserrat", sans-serif;
+
 
   /* overflow: hidden; */
 }
@@ -48,8 +59,10 @@ a {
 }
 
 .About-Me {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   color: var(--text-primary);
+  font-family: var(--font-family-Fjalla);
+scroll-padding-top: 2%;
   display: flex;
   justify-content: center;
 }
@@ -61,7 +74,7 @@ a {
 }
 .Header-Logo {
   font-size: 2rem;
-  font-family: "Caveat", cursive;
+  font-family: var(--font-family-youngSerif);
   font-weight: 200;
   cursor: pointer;
   color: var(--text-primary);
@@ -77,6 +90,8 @@ a {
   text-decoration: none;
   font-weight: 300;
   color: var(--text-primary);
+  font-family: var(--font-family-Fjalla);
+
   font-size: 1.3rem;
 }
 .Navbar-A:active {
@@ -107,13 +122,18 @@ a {
 .Hero-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 .Hero-Writing {
-  font-family: "Caveat", cursive;
+  font-family: var(--font-family-youngSerif);
+  /* font-family: "Caveat", cursive; */
   color: var(--text-primary);
-  font-size: 1.9rem;
+  font-size: 2.3rem;
+}
+.span{
+  font-size: 1.5rem;
+
 }
 .hero-img {
   height: 500px;
@@ -122,18 +142,19 @@ a {
 }
 
 /*  */
-.Project-Main {
+.Project-Wrapper{
   display: flex;
-  overflow: hidden;
   justify-content: center;
-  align-items: center;
-  margin-inline: 2%;
+  flex-direction: column;
+  align-items: first baseline;
+  padding: 2%;
+  width: 100%;
 
-  /* width:50% */
 }
+
 /*  */
 #Contact {
-  border: 1px solid Black;
+
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
@@ -229,10 +250,12 @@ label {
   display: none;
 }
 .Primary-Project {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
+  overflow: hidden;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr ;
 }
 @media only screen and (max-width: 600px) {
   html {
@@ -256,11 +279,14 @@ label {
     font-size: 1rem;
   }
   .hero-img {
-    display: block;
+    display: none;
   }
   .Hero-Main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .Primary-Project {
+    grid-template-columns: 1fr;
   }
 }

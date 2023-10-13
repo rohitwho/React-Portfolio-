@@ -130,7 +130,9 @@ export default function project() {
 
   return (
     <div  id ="Project" className="Project-Wrapper">
-      <h2 className="About-Me">Projects</h2>
+      <aside>
+        <h2 className="About-Me"> Featured Projects</h2>
+      </aside>
       <div id="Projects" className="Project-Main">
         <section className=" Primary-Project">
           {projects?.map((content) => (

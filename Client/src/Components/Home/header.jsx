@@ -14,19 +14,29 @@ import {
 import { SunIcon } from "./icons/SunIcon";
 import { MoonIcon } from "./icons/MoonIcon";
 import SetTheme  from "../Context/Theme"
+import  Contact  from "../../assets/letter.png";
+import  ContactLight  from "../../assets/letterLight.png";
 
 
 export default function renderHeader({ handlePageChange }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen);
+  const [isNight,setNight] = useState(false)
+
   const {dayNight, setDayNight} = useContext(SetTheme);
 
-  const  nightModeHandler = () =>   setDayNight(!dayNight)
+  const  nightModeHandler = () =>  { 
+    setDayNight(!dayNight);
+     setNight(true)
+     if(dayNight){
+      setNight(false)
+     }
+    };
+    
 
 
   const menuItems = ["Home", "Projects", "About", "Contact"];
   return (
-    <div style={{borderBottom:"inset", backgroundColor:"rgb(1 37 65)"}}>
+    <div style={{borderBottom:"inset", backgroundColor:"#e1dfdd"}}>
       <Navbar   isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle 
@@ -55,8 +65,8 @@ export default function renderHeader({ handlePageChange }) {
           <NavbarItem isActive>
             <Link
               color="foreground"
-              href="#"
-              onClick={() => handlePageChange("Projects")}
+              href="#Project"
+     
             >
               <p className="Navbar-A">Projects</p>
             </Link>
@@ -94,7 +104,11 @@ export default function renderHeader({ handlePageChange }) {
               endContent={<MoonIcon />}
               onClick={nightModeHandler}
             ></Switch>
+
           </NavbarItem>
+          <NavbarItem  onClick={() => handlePageChange("Contact")} className=" aspect-square w-7 cursor-pointer">
+            {isNight === true ?(<img src= {ContactLight} alt="" ></img> ):( <img src= {Contact} alt="" ></img>  )}
+         </NavbarItem>
         </NavbarContent>
         <NavbarMenu>
           {menuItems.map((item, index) => (
@@ -122,111 +136,3 @@ export default function renderHeader({ handlePageChange }) {
   );
 }
 
-// <header className="Primary-Header ">
-//         <h1 className="Header-Logo">Rohit</h1>
-//         <nav className="Primary-Navbar">
-//           <ul className="U-List">
-//             <li className="Navbar-Links ">
-//               <a
-//                 href="#"
-//                 className="Navbar-A"
-//                 onClick={() => handlePageChange("Home")}
-//               >
-//                 Home
-//               </a>
-//             </li>
-//             <li className="Navbar-Links">
-//               <a
-//                 href="#Projects"
-//                 className="Navbar-A"
-//                 onClick={() => handlePageChange("project")}
-//               >
-//                 Projects
-//               </a>
-//             </li>
-//             <li className="Navbar-Links">
-//               <a
-//                 href="#About"
-//                 className="Navbar-A"
-//                 onClick={() => handlePageChange("about")}
-//               >
-//                 About
-//               </a>
-//             </li>
-//             <li className="Navbar-Links">
-//               <a
-//                 href="#Contact"
-//                 className="Navbar-A"
-//                 onClick={() => handlePageChange("Contact")}
-//               >
-//                 Contact
-//               </a>
-//             </li>
-//             <li className="Navbar-Links">
-//               {" "}
-//               <Hire className="Navbar-A" onClick={handleOpen}>
-//                 Hire Me
-//               </Hire>
-//             </li>
-//           </ul>
-//         </nav>
-//       </header>
-
-{
-  /* <Modal
-open={open}
-onClose={handleClose}
-aria-labelledby="modal-modal-title"
-aria-describedby="modal-modal-description"
->
-<Box sx={style}>
-  <FormInput
-    inputLabel="Full Name:"
-    labelFor="name"
-    inputType="text"
-    inputId="name"
-    inputName="name"
-    placeholdertext="Name"
-    ariaLabelName="Name"
-  />
-  <FormInput
-    inputLabel="Email :"
-    labelFor="email"
-    inputType="email"
-    inputId="email"
-    inputName="email"
-    placeholdertext="email"
-    ariaLabelName="Email"
-  />
-
-  <FormInput
-    inputLabel="Project Description :"
-    labelFor="Message"
-    inputType="textarea"
-    inputId="Message"
-    inputName="Message"
-    placeholdertext="Message"
-    ariaLabelName="Message"
-    cols="70"
-    rows="8"
-  />
-  <Button
-    variant="ghost"
-    color="danger"
-    className="  m-3 "
-    onClick={handleClose}
-  >
-    Cancel
-  </Button>
-
-  <Button
-    variant="ghost"
-    color="primary"
-    className="m-3 p-4 "
-    onPress={handleClose}
-  >
-    Submit
-  </Button>
-</Box>
-</Modal> */
-}

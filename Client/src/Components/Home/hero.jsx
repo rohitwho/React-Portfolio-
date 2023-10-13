@@ -2,6 +2,7 @@ import React from "react";
 import resume from "./RohitNayyarResume.pdf";
 import { Button, Link } from "@nextui-org/react";
 import heroimg from "../../assets/hero.gif"
+import Socials from "../../pages/Socials";
 
 export default function hero() {
   function dowloadPdf() {
@@ -19,15 +20,19 @@ export default function hero() {
     <main className="Hero-Main">
       <section className="Hero-section">
         <h1 className="Hero-Writing">
-          Hello,My Name is Rohit<br></br>
-          <span className="span">I am a Full stack Developer</span>
+      Full stack Developer<br></br>
+          <span className="span"> From Pixels to Products: Building the Web One Line at a Time!</span>
+         
         </h1>
-        <div className=" flex gap-4"> 
-          <Button color="primary" onClick={dowloadPdf} className="Download">
-            Download CV &#8595;
-          </Button>
+        <div className=" flex  justify-between gap-4 "> 
+    
+            <Button color="primary" onClick={dowloadPdf} className="Download">
+              Download CV &#8595;
+            </Button>
+         
           <Button color="success"  className="Download"> <a href = "#Project">My Work &#8599;</a></Button>
         </div>
+        <div className=" pt-5"><Socials/></div>
       </section>
       <section className="Hero-image">
         <img className="hero-img" src={heroimg} alt="A GUY ON COMPUTER" />
