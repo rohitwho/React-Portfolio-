@@ -9,6 +9,7 @@ import Section from "./Components/About/About";
 import "./styles.css";
 // import About from "./pages/About-Me";
 import Skills from "./Components/Skills/Skills";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [dayNight, setDayNight] = useState();
@@ -32,7 +33,7 @@ function App() {
           <Skills/>
 
 
-          <Socials />
+        <Footer/>
         </NextUIProvider>
       </main>
     </SetTheme.Provider>
