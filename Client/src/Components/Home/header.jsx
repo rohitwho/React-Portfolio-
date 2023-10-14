@@ -76,9 +76,9 @@ export default function renderHeader({ handlePageChange }) {
           <NavbarItem isActive>
             <Link
               color="foreground"
-              href="#"
+              href="#About"
               aria-current="page"
-              onClick={() => handlePageChange("About")}
+            
             >
               <p className="Navbar-A">About</p>
             </Link>
@@ -86,8 +86,8 @@ export default function renderHeader({ handlePageChange }) {
           <NavbarItem isActive>
             <Link
               color="foreground"
-              href="#"
-              onClick={() => handlePageChange("Contact")}
+              href="#Contact"
+       
             >
               <p className="Navbar-A">Contact</p>
             </Link>
@@ -108,15 +108,22 @@ export default function renderHeader({ handlePageChange }) {
             ></Switch>
 
           </NavbarItem>
-          <NavbarItem  onClick={() => handlePageChange("Contact")} className=" aspect-square w-7 cursor-pointer">
+          <NavbarItem    className=" aspect-square w-7 cursor-pointer">
+          <Link
+              color="foreground"
+              href="#Contact"
+       
+            >
             {isNight === true ?(<img src= {ContactLight} alt="" ></img> ):( <img src= {Contact} alt="" ></img>  )}
+            </Link>
          </NavbarItem>
         </NavbarContent>
         <NavbarMenu>
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                onClick={()=> {handlePageChange(item) ,setIsMenuOpen(false)}}
+              href  = {`#${item}`}
+                onClick={()=> setIsMenuOpen(false)}
                 color={
                   index === 2
                     ? "primary"
@@ -125,7 +132,7 @@ export default function renderHeader({ handlePageChange }) {
                     : "foreground"
                 }
                 className="w-full"
-                href="#"
+               
                 size="lg"
               >
                 {item}

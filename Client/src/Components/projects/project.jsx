@@ -18,6 +18,7 @@ import {
 } from "react-icons/di";
 
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
+import Project from '../Project-Component/Project'
 
 export default function project() {
   const projects = [
@@ -136,103 +137,24 @@ export default function project() {
       <div id="Projects" className="Project-Main">
         <section className=" Primary-Project">
           {projects?.map((content) => (
-            <div
-              className="Project-Media"
-              style={{
-                display: "block",
-                borderBottom: "inset",
-
-                margin: "2%",
-                width: "70%",
-              }}
-              key={content.key}
-            >
-              <Card
-                isFooterBlurred
-                className=" w-50 h-[100px] col-span-12 sm:col-span-5 m-unit-xl"
-              >
-                <Image
-                  removeWrapper
-                  alt="Fit Zone"
-                  className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                  src={content.img}
-                />
-                <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-red-100/50 z-10 justify-between">
-                  <div>
-                    <p className="text-white  underline  text-large ">
-                      {content.projectName}
-                    </p>
-                  </div>
-                </CardFooter>
-              </Card>
-
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  padding: "1%",
-
-                  width: "100%",
-                }}
-              >
-                <h1
-                  style={{
-                    fontFamily: "Caveat",
-                    fontSize: "2.7rem",
-                    borderBottom: "inset",
-                  }}
-                >
-                  {content.projectName}
-                </h1>
-
-                <p
-                  style={{
-                    paddingInline: "1%",
-                    margin: "2%",
-                  }}
-                >
-                  {content.description}
-                </p>
-
-                <div>
-                  <h3
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      gap: "10px",
-                    }}
-                  >
-                    Tech Used :{content.technologiesUsed}
-                  </h3>
-                </div>
-
-                <div
-                  style={{
-                    margin: "2%",
-                    display: "flex",
-                    padding: "5%",
-                    gap: "10px",
-                  }}
-                >
-                  <Button color="primary" variant="ghost">
-                    <a target="_blank" href={content.gitHubUrl}>
-                      Source Code.
-                    </a>
-                  </Button>
-
-                  <Button color="warning" variant="ghost">
-                    <a target="_blank" href={content.liveUrl}>
-                      View Live
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
+            <Project
+            key={content.key}
+            Image={content.img} 
+            ProjectHeading={content.projectName}
+            ProjectName={content.projectName}
+            ProjectInformation={content.description}
+            TechUsed={content.technologiesUsed}
+           Alt={content.projectName}
+           ViewLive={content.liveUrl}
+           SourceCode={content.gitHubUrl}
+            />
+            
+          
           ))}
         </section>
       </div>
     </div>
   );
 }
+
+

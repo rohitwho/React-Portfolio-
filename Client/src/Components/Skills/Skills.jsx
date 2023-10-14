@@ -1,46 +1,48 @@
 import React, { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import Skill from "../../pages/About-Animation/animation4.json";
-import { CircularProgress } from "@nextui-org/react";
-// import LinearProgress from "@mui/material/LinearProgress";
 import LinearProgress from "@mui/material/LinearProgress";
-import { color } from "framer-motion";
 
 function Skills() {
   const skillsInfo = [
     { id: 1, Language: "Javascript", skillValue: 90 },
-    { id: 2, Language: "React", skillValue: "95" },
-    { id: 3, Language: "MongoDb", skillValue: "95" },
-    { id: 4, Language: "MySql", skillValue: "95" },
-    { id: 5, Language: "HTML5", skillValue: "95" },
-    { id: 6, Language: "CSS3", skillValue: "95" },
-    { id: 7, Language: "GraphQl", skillValue: "95" },
-    { id: 8, Language: "Express", skillValue: "95" },
+    { id: 2, Language: "React", skillValue: 95 },
+    { id: 3, Language: "MongoDb", skillValue: 90 },
+    { id: 4, Language: "MySql", skillValue: 87 },
+    { id: 5, Language: "HTML5", skillValue: 95 },
+    { id: 6, Language: "CSS3", skillValue: 95 },
+    { id: 7, Language: "GraphQl", skillValue: 80 },
+    { id: 8, Language: "Express", skillValue: 85 },
   ];
 
   return (
   
-    <section className="Skills-Container">
-
-      <main className="Skills-Animation">
-        <Lottie animationData={Skill}></Lottie>
-      </main>
-      <aside className="skills-Technical">
-        <ul className="Skill-UnorderdList">
-          {skillsInfo.map((info) => (
-            <li key={info.id}  className="Skill-List">
-              {info.Language}
-              <span >
+    <main className="Skills-Wrapper">
+      <h1 className="Skill-H1"> SkillSet</h1>
+      <section className="Skills-Container">
+        <main className="Skills-Animation">
+          <Lottie animationData={Skill}></Lottie>
+        </main>
+        <aside className="skills-Technical">
+            {skillsInfo.map((info) => (
+          <ul key={info.id}  className="Skill-UnorderdList">
+              <li  className="Skill-List">
+             
+                <span >
+               {info.Language}
+                </span>
+                <span>
                 {info.skillValue}%
-              </span>
-              <LinearProgress  sx={{borderRadius:"10px",height:"10px"} } variant="determinate" value={info.skillValue} />
-            </li>
-            
-            
-          ))}
-        </ul>
-      </aside>
-    </section>
+                </span>
+              </li>
+              <LinearProgress  sx={{borderRadius:"10px",height:"4px"} } variant="determinate" value={info.skillValue} />
+      
+      
+          </ul>
+            ))}
+        </aside>
+      </section>
+    </main>
   );
 }
 

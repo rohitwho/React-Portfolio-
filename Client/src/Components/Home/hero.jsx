@@ -38,7 +38,6 @@ export default function hero() {
       </section>
       <section className="Hero-image">
         <Lottie animationData={Hero}></Lottie>
-        {/* <img className="hero-img" src={Hero} alt="A GUY ON COMPUTER" /> */}
       </section>
     </main>
   );

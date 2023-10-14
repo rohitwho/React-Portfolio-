@@ -4,7 +4,7 @@ import Section from '../../pages/About-Animation/animation1.json'
 
 function About() {
   return (
-   <section className='About-Me-Container'>
+   <section  id = "About"className='About-Me-Container'>
     <main className='About-Me-Animation'>
         <Lottie animationData={Section}></Lottie>
 

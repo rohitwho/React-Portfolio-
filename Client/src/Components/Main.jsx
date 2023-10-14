@@ -14,14 +14,14 @@ export default function Portfolio() {
       return <Hero />;
     }
     if (currentPage === "Projects") {
-      return <Project />;
+      return ;
     }
     if (currentPage === "About") {
       return ;
     }
 
     if (currentPage === "Contact") {
-      return <Contact />;
+      return ;
     }
   };
   const handlePageChange = (page) => setCurrentPage(page);

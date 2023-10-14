@@ -5,11 +5,10 @@ import { useState, useEffect } from "react";
 import SetTheme from "./Components/Context/Theme";
 import Project from './Components/projects/project'
 import Section from "./Components/About/About";
-
 import "./styles.css";
-// import About from "./pages/About-Me";
 import Skills from "./Components/Skills/Skills";
 import Footer from "./Components/Footer/Footer";
+import Contact from '././Components/contact/contact'
 
 function App() {
   const [dayNight, setDayNight] = useState();
@@ -31,6 +30,7 @@ function App() {
 
           <Project/>
           <Skills/>
+          <Contact/>
 
 
         <Footer/>
