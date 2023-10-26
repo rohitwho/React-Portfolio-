@@ -4,7 +4,7 @@ import rentix from "../../assets/Rentix.jpeg";
 import bookSearch from "../../assets/Book-search.jpeg";
 import techSavvy from "../../assets/TechSavvy.png";
 import MusicIO from "../../assets/MusicIO.jpeg";
-import ShopAll from '../../assets/ShopAll.jpg'
+import ShopAll from '../../assets/ShopAll.png'
 import {
   DiCss3Full,
   DiHtml5,
@@ -16,11 +16,13 @@ import {
   DiBootstrap,
   DiDatabase,
 } from "react-icons/di";
+import { motion,useViewportScroll } from "framer-motion"
 
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 import Project from '../Project-Component/Project'
 
 export default function project() {
+
   const projects = [
     {
       key: "0",
@@ -130,15 +132,16 @@ export default function project() {
   ];
 
   return (
-    <div  id ="Project" className="Project-Wrapper">
+    <motion.div 
+   id ="Project" className="Project-Wrapper">
       <aside>
         <h2 className="Project-Heading"> Featured Projects</h2>
       </aside>
       <div id="Projects" className="Project-Main">
-        <section className=" Primary-Project">
+        <section className="Primary-Project">
           {projects?.map((content) => (
             <Project
-            key={content.key}
+            key={content}
             Image={content.img} 
             ProjectHeading={content.projectName}
             ProjectName={content.projectName}
@@ -153,7 +156,7 @@ export default function project() {
           ))}
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
